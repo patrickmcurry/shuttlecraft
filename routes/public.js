@@ -34,7 +34,7 @@ import {
 
 const logger = debug('notes');
 
-const unrollThread = async (noteId, results = [], ascend = true, descend = true) => {
+export const unrollThread = async (noteId, results = [], ascend = true, descend = true) => {
   let post, actor;
   let stats;
   if (isMyPost({
